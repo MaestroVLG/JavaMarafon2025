@@ -6,8 +6,8 @@ public class Task1 {
 
         long before = System.currentTimeMillis();
 
-        for(int i = 0; i <= 20000; i++)
-            numbers += numbers + " ";
+        for(int i = 0; i <= 20; i++)
+            numbers += i + " ";
 
         long after = System.currentTimeMillis();
 
@@ -17,14 +17,14 @@ public class Task1 {
 
         StringBuilder sb = new StringBuilder("");
 
-        long before1 = System.currentTimeMillis();
+        before = System.currentTimeMillis();
 
-        for(int i = 0; i <= 20000; i++)
+        for(int i = 0; i <= 20; i++)
             sb.append(i).append(" ");
 
-        long after1 = System.currentTimeMillis();
+        after = System.currentTimeMillis();
 
-        System.out.println("Время выполнения с классом StringBuilder: " + (after1 - before1));
+        System.out.println("Время выполнения с классом StringBuilder: " + (after - before));
 
         System.out.println(sb);
 
